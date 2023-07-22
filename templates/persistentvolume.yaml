@@ -11,4 +11,3 @@ spec:
   storageClassName: manual
   hostPath:
     path: /data/{{ .Release.Name }}-pv
-

@@ -13,9 +13,19 @@ spec:
         app: {{ .Release.Name }}
     spec:
       containers:
-      - name: {{ .Release.Name }}-container
-        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
-        ports:
-        - containerPort: 80
-
+        - name: {{ .Release.Name }}-container
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 80
+          {{- if .Values.persistence.enabled }}
+          volumeMounts:
+            - name: {{ .Release.Name }}-volume
+              mountPath: /var/log/nginx
+          {{- end }}
+      {{- if .Values.persistence.enabled }}
+      volumes:
+        - name: {{ .Release.Name }}-volume
+          persistentVolumeClaim:
+            claimName: {{ .Release.Name }}-pvc
+      {{- end }}
