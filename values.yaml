@@ -19,4 +19,4 @@ persistence:
   enabled: true
   storageClassName: manual
   accessMode: ReadWriteOnce
-  size: 5Gi
+  size: 2Gi

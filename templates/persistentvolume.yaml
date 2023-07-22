@@ -6,7 +6,8 @@ spec:
   capacity:
     storage: 5Gi
   accessModes:
-    - ReadWriteOnce
+    # - ReadWriteOnce
+    - {{ .Values.persistence.accessMode}}
   persistentVolumeReclaimPolicy: Retain
   storageClassName: manual
   hostPath:

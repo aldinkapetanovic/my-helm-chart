@@ -1,5 +1,4 @@
 apiVersion: v2
 name: mychart
-version: 0.1.2
+version: 0.1.7
 description: A simple Helm chart
-
