@@ -39,3 +39,10 @@ helm repo add my-helm-chart https://aldinkapetanovic.github.io/my-helm-chart
 
 helm install my-helm-chart my-helm-chart/mychart -n my-helm-chart --create-namespace
 
+
+
+helm repo update
+
+helm upgrade -n my-helm-chart my-helm-chart my-helm-chart/mychart
+
+helm list -A
