@@ -17,7 +17,23 @@ helm upgrade --install mychart ./mychart-0.1.7.tgz --create-namespace --namespac
 
 Bonus
 
+GH Pages & Helm repo
+
+enable gh pages for repo
+
+git clone 
+
 helm repo index --url https://aldinkapetanovic.github.io/my-helm-chart .
+
+change version
+
+helm repo index --url https://aldinkapetanovic.github.io/my-helm-chart --merge index.yaml . 
+
+
+git push
+
+
+Add helm repo
 
 helm repo add my-helm-chart https://aldinkapetanovic.github.io/my-helm-chart
 
