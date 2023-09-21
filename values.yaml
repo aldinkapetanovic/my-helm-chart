@@ -6,7 +6,7 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  name: mychart-service
+  name: my-helm-chart-service
   port: 80
   type: LoadBalancer
 
@@ -17,6 +17,6 @@ service:
 
 persistence:
   enabled: true
-  storageClassName: manual
+  storageClassName: nfs-csi
   accessMode: ReadWriteOnce
   size: 2Gi

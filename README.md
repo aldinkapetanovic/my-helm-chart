@@ -1,18 +1,18 @@
 helm package .
 
-helm install mychart ./mychart-0.1.7.tgz
+helm install my-helm-chart ./my-helm-chart-0.1.9.tgz
 
-helm uninstall mychart
+helm uninstall my-helm-chart
 
-helm install mychart ./mychart-0.1.7.tgz --create-namespace --namespace mychart
+helm install my-helm-chart ./my-helm-chart-0.1.9.tgz --create-namespace --namespace my-helm-chart
 
-helm uninstall mychart -n mychart
+helm uninstall my-helm-chart -n my-helm-chart
 
-helm install mychart ./mychart-0.1.7.tgz --create-namespace --namespace mychart --values new-values.yaml
+helm install my-helm-chart ./my-helm-chart-0.1.9.tgz --create-namespace --namespace my-helm-chart --values new-values.yaml
 
-helm uninstall mychart -n mychart
+helm uninstall my-helm-chart -n my-helm-chart
 
-helm upgrade --install mychart ./mychart-0.1.7.tgz --create-namespace --namespace mychart --values new-values.yaml --set service.type="NodePort"
+helm upgrade --install my-helm-chart ./my-helm-chart-0.1.9.tgz --create-namespace --namespace my-helm-chart --values new-values.yaml --set service.type="NodePort"
 
 
 Bonus
@@ -37,12 +37,12 @@ Add helm repo
 
 helm repo add my-helm-chart https://aldinkapetanovic.github.io/my-helm-chart
 
-helm install my-helm-chart my-helm-chart/mychart -n my-helm-chart --create-namespace
+helm install my-helm-chart my-helm-chart/my-helm-chart -n my-helm-chart --create-namespace
 
 
 
 helm repo update
 
-helm upgrade -n my-helm-chart my-helm-chart my-helm-chart/mychart
+helm upgrade -n my-helm-chart my-helm-chart my-helm-chart/my-helm-chart
 
 helm list -A
