@@ -10,4 +10,4 @@ spec:
       targetPort: 80
   # type: ClusterIP
   type: {{ .Values.service.type }}
-
+  loadBalancerIP: {{ .Values.service.loadBalancerIP }}
