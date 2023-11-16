@@ -6,10 +6,9 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  name: my-helm-chart-service
   port: 80
-  type: LoadBalancer
-  loadBalancerIP: 192.168.0.2
+  type: ClusterIP
+  # loadBalancerIP: 192.168.0.2
 
 # ingress:
 #   enabled: true
@@ -18,6 +17,6 @@ service:
 
 persistence:
   enabled: true
-  storageClassName: nfs-csi
-  accessMode: ReadWriteOnce
+  storageClassName: ""
+  # accessMode: ReadWriteOnce
   size: 2Gi
