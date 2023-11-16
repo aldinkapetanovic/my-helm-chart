@@ -18,5 +18,5 @@ service:
 persistence:
   enabled: true
   storageClassName: ""
-  # accessMode: ReadWriteOnce
+  accessMode: ReadWriteMany
   size: 2Gi
