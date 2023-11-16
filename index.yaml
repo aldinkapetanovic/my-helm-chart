@@ -2,7 +2,15 @@ apiVersion: v1
 entries:
   my-helm-chart:
   - apiVersion: v2
-    created: "2023-11-16T21:44:30.360745306+01:00"
+    created: "2023-11-16T21:48:18.116818756+01:00"
+    description: A simple Helm chart
+    digest: 1ded2209b5f965a5faaea663cd40d599cd707d21fdc3652c4c6d91f2ce18a7e8
+    name: my-helm-chart
+    urls:
+    - https://aldinkapetanovic.github.io/my-helm-chart/my-helm-chart-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    created: "2023-11-16T21:48:18.114769756+01:00"
     description: A simple Helm chart
     digest: ed3d233dbb9f29e2d121700f2b083852d6f5debc335c19a1a65d267123fb304d
     name: my-helm-chart
@@ -10,7 +18,7 @@ entries:
     - https://aldinkapetanovic.github.io/my-helm-chart/my-helm-chart-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
-    created: "2023-11-16T21:44:30.359250906+01:00"
+    created: "2023-11-16T21:48:18.113045856+01:00"
     description: A simple Helm chart
     digest: 60b79f317eb39e78357cc3c1387cb42f7c1a8acf39648901f15ae7d80034cd27
     name: my-helm-chart
@@ -18,7 +26,7 @@ entries:
     - https://aldinkapetanovic.github.io/my-helm-chart/my-helm-chart-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2023-11-16T21:44:30.358366906+01:00"
+    created: "2023-11-16T21:48:18.112108356+01:00"
     description: A simple Helm chart
     digest: f5ef0e7342a6d6b897ef854b98dee8e19bf4c65174b91afcdc5c0c8d4320a644
     name: my-helm-chart
@@ -26,11 +34,11 @@ entries:
     - https://aldinkapetanovic.github.io/my-helm-chart/my-helm-chart-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2023-11-16T21:44:30.357529906+01:00"
+    created: "2023-11-16T21:48:18.111270156+01:00"
     description: A simple Helm chart
     digest: dcdace82653cbdd556a4153a6e9445e22b9200c5c1d60435df5de35e4d8ee183
     name: my-helm-chart
     urls:
     - https://aldinkapetanovic.github.io/my-helm-chart/my-helm-chart-0.1.9.tgz
     version: 0.1.9
-generated: "2023-11-16T21:44:30.355715406+01:00"
+generated: "2023-11-16T21:48:18.110285456+01:00"

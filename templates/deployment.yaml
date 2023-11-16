@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-deployment
+  name: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -13,19 +13,19 @@ spec:
         app: {{ .Release.Name }}
     spec:
       containers:
-        - name: {{ .Release.Name }}-container
+        - name: {{ .Release.Name }}
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 80
           {{- if .Values.persistence.enabled }}
           volumeMounts:
-            - name: {{ .Release.Name }}-volume
+            - name: {{ .Release.Name }}
               mountPath: /var/log/nginx
           {{- end }}
       {{- if .Values.persistence.enabled }}
       volumes:
-        - name: {{ .Release.Name }}-volume
+        - name: {{ .Release.Name }}
           persistentVolumeClaim:
-            claimName: {{ .Release.Name }}-pvc
+            claimName: {{ .Release.Name }}
       {{- end }}
