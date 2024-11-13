@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   my-helm-chart:
   - apiVersion: v2
-    appVersion: 1.27.2
-    created: "2024-11-13T09:38:55.59269+01:00"
+    appVersion: 1.24.0
+    created: "2024-11-13T09:54:06.694136+01:00"
     description: A Helm chart for Kubernetes
-    digest: fd5dac9bd379e6583d421771445da9cd1b3d6e3774dcf626ceaa4bc7bc8610bb
+    digest: e7d5b1c1b8f541f2c3c14e649ed8ee951a39827707a6c2c02a38dbcc7716cac1
     name: my-helm-chart
     type: application
     urls:
     - https://aldinkapetanovic.github.io/my-helm-chart/my-helm-chart-1.0.0.tgz
     version: 1.0.0
-generated: "2024-11-13T09:38:55.591859+01:00"
+generated: "2024-11-13T09:54:06.693195+01:00"
