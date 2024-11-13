@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   my-helm-chart:
   - apiVersion: v2
+    appVersion: latest
+    created: "2024-11-13T11:26:37.821339+01:00"
+    description: A Helm chart for Kubernetes
+    digest: c3c3418c7c9c6ff8d9f6a03fa7b870f1dd507b9b4aa6eb64176dfe22e4c3f467
+    name: my-helm-chart
+    type: application
+    urls:
+    - https://aldinkapetanovic.github.io/my-helm-chart/my-helm-chart-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
     appVersion: 1.27.2
-    created: "2024-11-13T10:37:13.704844+01:00"
+    created: "2024-11-13T11:26:37.820348+01:00"
     description: A Helm chart for Kubernetes
     digest: 1f83dbcd7bfa38e9984bea061dd9280e7f23e0b49bc15f771bb21a196311bbf7
     name: my-helm-chart
@@ -13,7 +23,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.26.2
-    created: "2024-11-13T10:37:13.703897+01:00"
+    created: "2024-11-13T11:26:37.819498+01:00"
     description: A Helm chart for Kubernetes
     digest: ae904bfcce4dca3e7291cb5b16409b7bdfa1d59a43b388d18862a72639fa9b3e
     name: my-helm-chart
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://aldinkapetanovic.github.io/my-helm-chart/my-helm-chart-1.0.0.tgz
     version: 1.0.0
-generated: "2024-11-13T10:37:13.702734+01:00"
+generated: "2024-11-13T11:26:37.818691+01:00"
